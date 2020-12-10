@@ -1,9 +1,14 @@
 <script>
-  import Nav from "./Nav.svelte";
   import Flex from "./Flex.svelte";
+  import Grid from "./Grid.svelte";
   import Section from "./Section.svelte";
+  import Nav from "./Nav.svelte";
   import Hero from "./Hero.svelte";
   import Box from "./Box.svelte";
+  import Glass from "./Glass.svelte";
+  import Button from "./Button.svelte";
+  import Card from "./Card.svelte";
+  import Blockquote from "./Blockquote.svelte";
 </script>
 
 <Nav />
@@ -11,34 +16,77 @@
 <div class="circle" />
 
 <header>
-  <section>Break Glass!</section>
+  <Glass>Break Glass!</Glass>
 </header>
 
-<Section padding="40px 0">
-  <Flex justify="space-around" align="center">
+<Section boxed padding="80px 0">
+  <Card align="left">
+    <h3>Section Heading</h3>
+    <Grid columns="1fr 1fr" gap="2em" padding="1em">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+        doloremque provident facilis, nam harum ratione aliquid sapiente ullam
+        illum animi rerum cupiditate voluptates assumenda debitis, vitae
+        veritatis commodi aliquam vel qui quis. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+        doloremque provident facilis, nam harum ratione aliquid sapiente ullam
+        illum animi rerum cupiditate voluptates assumenda debitis, vitae
+        veritatis commodi aliquam vel qui quis. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit.
+      </p>
+    </Grid>
+    <Blockquote shadow>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam
+      quibusdam quod accusantium optio accusamus magnam?
+    </Blockquote>
+    <Grid columns="1fr 1fr" gap="2em" padding="1em">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+        doloremque provident facilis, nam harum ratione aliquid sapiente ullam
+        illum animi rerum cupiditate voluptates assumenda debitis, vitae
+        veritatis commodi aliquam vel qui quis. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+        doloremque provident facilis, nam harum ratione aliquid sapiente ullam
+        illum animi rerum cupiditate voluptates assumenda debitis, vitae
+        veritatis commodi aliquam vel qui quis. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit.
+      </p>
+    </Grid>
+  </Card>
+  <Flex justify="space-between" align="center">
     <Box>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nihil, rem
       aut expedita totam explicabo nobis quaerat soluta ad necessitatibus ab
       rerum libero perspiciatis, natus consequuntur!
+      <Button shadow>Make My Day</Button>
     </Box>
     <Box>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nihil, rem
       aut expedita totam explicabo nobis quaerat soluta ad necessitatibus ab
       rerum libero perspiciatis, natus consequuntur!
+      <Button shadow>Make My Day</Button>
     </Box>
     <Box>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nihil, rem
       aut expedita totam explicabo nobis quaerat soluta ad necessitatibus ab
       rerum libero perspiciatis, natus consequuntur!
+      <Button shadow>Make My Day</Button>
     </Box>
   </Flex>
 </Section>
 
 <Hero background="https://source.unsplash.com/random/?1" height="400px">
-  <section>A thing here.</section>
+  <Glass color="gold">A thing here.</Glass>
+  <Button shadow>Make My Day</Button>
 </Hero>
 
-<Section margin="40px 0" padding="40px 0" />
+<Section margin="20px 0" padding="40px 0" />
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
@@ -54,7 +102,7 @@
   }
   div.circle {
     position: absolute;
-    top: 100px;
+    top: 110px;
     left: 35%;
     transform: translateX(-50%);
     width: 300px;
@@ -69,20 +117,5 @@
     margin: auto;
     background: url("https://source.unsplash.com/random") no-repeat center
       center/cover;
-  }
-  section {
-    width: 600px;
-    height: 200px;
-    margin: auto;
-    font-size: 4em;
-    font-weight: bold;
-    line-height: 200px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8) inset,
-      10px 10px 20px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
   }
 </style>
