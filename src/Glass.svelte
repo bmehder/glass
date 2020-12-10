@@ -20,7 +20,7 @@
       10px 10px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     text-align: center;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   }
   @media screen and (max-width: 600px) {
     .glass {

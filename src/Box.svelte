@@ -14,8 +14,9 @@
     padding: 2em;
     background: white;
     border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     aside {
       width: 100%;
       margin: 1em;
